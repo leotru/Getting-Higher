@@ -1,15 +1,3 @@
-%------------------------------------------------------------------------
-% fitnessGraph
-% Script "fitnessGraphs.m" /AWNKMasterCodes/MatlabScripts/Version_1.2
-%
-% construct the fitness landscape graph from the data of admissible
-% evolutive paths from NK-model instances
-%--------------------------------------------------------------------------
-% Created: 2020-08-04 (Numeric date format year-month-day)
-% Modified: 2020-08-05
-% by Leo (leonardo.trujillo@gmail.com)
-%--------------------------------------------------------------------------
-
 % ------------------------------------------------------------------------
 % Project getting-higher/
 % ------------------------------------------------------------------------
