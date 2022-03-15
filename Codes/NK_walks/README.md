@@ -16,7 +16,7 @@ where,
 - **T**: Number of steps in the random walk (default = 10000).
 - **M**: Mutation type (float) (0.0 <= **M** <= 1.0)," such that **M** = 0.0: point mutations only (default)," **M** = 1.0: inversions only."
 - **genome.csv**: initial genome (if no file containing the genome is indicated, then the initial genome is randomly generated).  
-- **fullstop:    Tests if at the end a local optimum for inversions is reached
+- **fullstop**:    Tests if at the end a local optimum for inversions is reached
 
  Help: run the command line ./nk_walk -help  to print out the required 
  input parameters. 
