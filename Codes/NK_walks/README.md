@@ -4,7 +4,7 @@
 
 
 ### Compile nk_walk.cpp and run the simulation as 
- ./nk_walk  -n **N** -k **K** -a **A** -e **epi** -snk **nk_seed** -swlk **wlk_seed** -t **T** -m **M** -f  **genome.csv** 
+ ./nk_walk  -n **N** -k **K** -a **A** -e **epi** -snk **nk_seed** -swlk **wlk_seed** -t **T** -m **M** -f  **genome.csv** -fullstop
 
 where, 
 - **N**: Genome length.
@@ -16,6 +16,7 @@ where,
 - **T**: Number of steps in the random walk (default = 10000).
 - **M**: Mutation type (float) (0.0 <= **M** <= 1.0)," such that **M** = 0.0: point mutations only (default)," **M** = 1.0: inversions only."
 - **genome.csv**: initial genome (if no file containing the genome is indicated, then the initial genome is randomly generated).  
+- **fullstop:    Tests if at the end a local optimum for inversions is reached
 
  Help: run the command line ./nk_walk -help  to print out the required 
  input parameters. 
@@ -46,4 +47,8 @@ where,
 - v.3.2 2021-02-04: implements the option to read an initial genome from a 
                    file containing a genome string of size N (for a binary 
                    alphabet A = {0,1}).
+- v.3.3 2021-07-28: include the verification that an adaptive walk reach a 
+                   local optimum for inversion mutations. Done by Paul Banse
+                   (paul.banse@inria.fr)
+
 
