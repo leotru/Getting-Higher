@@ -3,7 +3,7 @@
 // Project AevolStatPhys
 //****************************************************************************
 //
-// nk_walk.cpp version 3.2  2021-02-04:
+// nk_walk.cpp version 3.3  2021-07-28:
 //
 // Main routine to simulate adative walks on the Stuart Kauffman's
 // NK-fitness landscape model, with point mutations (as usual) and 
@@ -44,11 +44,12 @@
 // v.3.2 2021-02-04: implemnts the option to read an initial genome from a 
 //                   file containing a genome string of size N (for a binary 
 //                   alphabet A = {0,1}).
+// v.3.3 2021-07-28: include the verification that an adaptive walk reach a 
+//                   local optimum for inversion mutations. Done by Paul Banse
+//                   (paul.banse@inria.fr)
 //
-//                   THIS VERSION IS ALMOST AN APLPHA VERSION 
+//                   (as far as we have verified this version is mostly stable) 
 //
-// PENDING:          Open science, reproducible research and open source 
-//                   software documentation formats. 
 //
 //****************************************************************************
 // PROGRAM PARAMETERS (Global variables):
@@ -70,7 +71,7 @@
 // T:           Number of steps to perform in the adaptive walk.
 // wikde_type:  Initial genome to be read from a given file containing a genome
 //              string of size N (for a binary alphabet A = {0,1}).
-//
+// fullstop:    Tests if at the end a local optimum for inversions is reached 
 // Pointers:
 // nk:       A pointer to a NK-landscape.
 // rnd:      A pointer to a random number generator.
