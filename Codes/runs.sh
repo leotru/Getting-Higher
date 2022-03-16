@@ -183,8 +183,8 @@ do
     snk=$RANDOM
     swlk=$RANDOM
     echo "hike: $i"_"$runLabel"
-    ./C++code/nk_walk -n $N -k $K  -a $A -e $epi -snk $snk  -swlk $swlk -t $T -m 1 -fullstop
-    ./C++code/nk_walk -n $N -k $K  -a $A -e $epi -snk $snk  -swlk $swlk -t $T -m 0 -fullstop
+    ./nk_walk -n $N -k $K  -a $A -e $epi -snk $snk  -swlk $swlk -t $T -m 1 -fullstop
+    ./nk_walk -n $N -k $K  -a $A -e $epi -snk $snk  -swlk $swlk -t $T -m 0 -fullstop
   done;
 done;  
 
