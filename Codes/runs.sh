@@ -37,8 +37,9 @@
 # fullstop:  Tests if at the end a local optimum for inversions is reached
 # ------------------------------------------------------------------------
 # Created: 2019-09-01 
-# Modified: 2021-02-01
-# by Leonardo Trujillo (leonardo.trujillo@gmail.fr)
+# Modified: 2022-03-16
+# by Leonardo Trujillo (leonardo.trujillo@inria.fr) and Paul Banse
+# (paul.banse@inria.fr)
 # ------------------------------------------------------------------------
 # The Matrix has you...Follow the white rabbit. Knock, Knock, Neo
 
