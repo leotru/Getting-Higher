@@ -39,7 +39,7 @@ fitnessGraphs.m: Matlab script to calculate the fitness networks.
 
 Data: The data used to plot figures 3 and 4 of the manuscript. 
 
-Figures: Figures 3 and 4 of the manuscript (also two supplementary figures of the mean fitness for N=50 and 75). 
+Figures: Figures 3 and 4 of the manuscript (also two supplementary figures of the mean fitness for N=50 and 80). 
 
 
 
