@@ -27,10 +27,11 @@ of point mutations for simulations of molecular evolution.
 The preprint is available on (soon on arXiv)
 
 ##### Repository content
-Codes:
+###Codes:
 
-nk_walk: Main routine to simulate adative walks on the Stuart Kauffman's NK-fitness landscape model, with point mutations (as usual) and inversions (as new).
-Python codes to analyse the data and plot the figures reported in the paper.
+nk_walk.cpp: Main routine to simulate adative walks on the Stuart Kauffman's NK-fitness landscape model, with point mutations (as usual) and inversions (as new).
+
+mean_fitness_full_plot.py: Python code to calculate and plot the mean fitness.
 
 full_mutational_network.m: Matlab scritp to calculate mutational networks.
 
