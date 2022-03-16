@@ -3,14 +3,14 @@
 # SimNK version 0.1
 # Project AevolStatPhys
 # ------------------------------------------------------------------------
-# runsAnnealed.sh / version_0.1
+# runs.sh / version_0.1
 # ------------------------------------------------------------------------
 # This script runs the executable nk_walk automatically to simulate 
-# different random instances of the fitness landscape (annealed statistic).
+# different random instances of the fitness landscape.
 # ------------------------------------------------------------------------
 # The command line to run the script is for example:  
-# Linux: ~$ bash runsAnnealed.sh
-# macOS: ~$ sh runsAnnealed.sh (tested in macOS Mojave v.10.14.6)
+# Linux: ~$ bash runs.sh
+# macOS: ~$ sh runs.sh (tested in macOS Mojave v.10.14.6)
 # ------------------------------------------------------------------------
 # In general: A SCRIPT TO READ THE ARGUMENTS, EXECUTE THE RUNS, SAVE THE 
 # DATA, WRITE SIMULATIONS REPORTS IN README FILES AND SAVE THE SEEDS USED 
@@ -22,7 +22,7 @@
 # ------------------------------------------------------------------------
 # Nomenclature:
 # ./nk_walk  -n $N -k $K -a $A -e EPI -snk SEED_NK -swlk $SEED_WLK 
-#            -t $T -m M 
+#            -t $T -m M -fullstop
 # N:        The genome length.
 #	K:        The number of epistatic interactions (0 <= K < N).
 #	A:        The alphabet size (default = 2).
@@ -34,6 +34,7 @@
 #            such that M = 0.0: point mutations only (default)," 
 #                      M = 1.0: inversions only."
 #            Remark: inversions of length 1 are allowed."
+# fullstop:  Tests if at the end a local optimum for inversions is reached
 # ------------------------------------------------------------------------
 # Created: 2019-09-01 
 # Modified: 2021-02-01
@@ -129,10 +130,6 @@ echo "> Sample number of landscape instances: hard coded to 100."
 samples=100 #$samples
 echo "------------------------------------------------------------"
 
-#echo "> Cloud storage in Dropbox? "
-#echo "type y if yes,  or n if not"
-#share = n
-
 echo "------------------------------------------------------------"
 echo
 echo "Thank you very much and press ENTER to start the simulations"
@@ -209,23 +206,6 @@ echo "---------------------------------------------------"
 mv final_fitness.csv final_fitness_N"$N"_"$epi".csv
  
 
-#if [ $share == y ]
-#  then 
-#  tar -zcvf N"$N"Annealed.tar.gz N"$N"Annealed/
-#  mv N"$N"Annealed.tar.gz ~leo/Dropbox/
-#fi
- 
-#printf 'Working'
-#for ((i = 0; i < 5; ++i)); do
-#    for ((j = 0; j < 4; ++j)); do
-#        printf .
-#        sleep 5
-#    done
-#
-#    printf '\b\b\b\b    \b\b\b\b'
-#done
-#printf '....done\n'
-#$
 # ------------------------------------------------------------------------
 # Bye!
 # ------------------------------------------------------------------------
