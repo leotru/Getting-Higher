@@ -22,7 +22,7 @@ where,
  input parameters. 
 
  #### Why reinvent the wheel? 
- This code uses the one developed by Wim Hordijk (in its version of 
+ This code is based on the one developed by Wim Hordijk (in its version of 
  August 23, 2010 and which is available at http://www.cs.unibo.it/~fioretti/CODE/NK/), which uses some code from Terry Jones 
  (https://github.com/terrycojones/nk-landscapes).
 
