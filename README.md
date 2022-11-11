@@ -2,8 +2,12 @@
 
 This repository contains supporting data and codes for the paper
 
-### Getting higher on rugged landscapes
-by L. Trujillo, P. Banse and G. Beslon (2022)
+### Getting higher on rugged landscapes: Inversion mutations open access to fitter adaptive peaks in NK fitness landscapes
+by L. Trujillo, P. Banse and G. Beslon 
+
+PLoS Computational Biology, October 31, 2022
+
+https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1010647
 
 #### Abstract
 Molecular evolution is often conceptualised as adaptive walks on rugged fitness
